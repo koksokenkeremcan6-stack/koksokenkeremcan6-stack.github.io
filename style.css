@@ -2003,3 +2003,42 @@ footer {
         min-height: 220px;
     }
 }
+/* =========================
+   YORUMLAR - MOBİL
+========================= */
+
+@media (max-width: 700px) {
+
+    .review-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .review-item {
+        min-height: auto;
+        padding: 30px 26px 26px;
+    }
+
+    .review-item p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .review-item span {
+        margin-top: 24px;
+    }
+
+    .review-rating {
+        margin-bottom: 30px;
+        gap: 12px;
+    }
+
+    .review-rating strong {
+        font-size: 44px;
+    }
+
+    .review-card > .primary-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
