@@ -31,13 +31,13 @@ body {
     overflow-x: hidden;
 }
 
-    body.no-scroll {
-        position: fixed;
-        left: 0;
-        right: 0;
-        width: 100%;
-        overflow: hidden;
-    }
+body.no-scroll {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+}
 
 a {
     color: inherit;
@@ -68,10 +68,10 @@ select {
     transition: .6s;
 }
 
-    .loader.hide {
-        opacity: 0;
-        visibility: hidden;
-    }
+.loader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
 
 .loader-logo {
     font-size: 24px;
@@ -80,12 +80,12 @@ select {
     line-height: .85;
 }
 
-    .loader-logo span {
-        display: block;
-        color: var(--accent);
-        font-size: 11px;
-        letter-spacing: 5px;
-    }
+.loader-logo span {
+    display: block;
+    color: var(--accent);
+    font-size: 11px;
+    letter-spacing: 5px;
+}
 
 .loader-line {
     width: 150px;
@@ -94,20 +94,19 @@ select {
     overflow: hidden;
 }
 
-    .loader-line::after {
-        content: "";
-        display: block;
-        width: 40%;
-        height: 100%;
-        background: var(--accent);
-        animation: loading 1.2s infinite ease-in-out;
-    }
+.loader-line::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 100%;
+    background: var(--accent);
+    animation: loading 1.2s infinite ease-in-out;
+}
 
 @keyframes loading {
     from {
         transform: translateX(-120%);
     }
-
     to {
         transform: translateX(400%);
     }
@@ -132,13 +131,13 @@ select {
     transition: .3s;
 }
 
-    .navbar.scrolled,
-    .navbar.menu-open {
-        background: rgba(7,12,20,.94);
-        backdrop-filter: blur(15px);
-        border-bottom: 1px solid rgba(181,154,103,.16);
-        box-shadow: 0 5px 30px rgba(0,0,0,.2);
-    }
+.navbar.scrolled,
+.navbar.menu-open {
+    background: rgba(7,12,20,.94);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(181,154,103,.16);
+    box-shadow: 0 5px 30px rgba(0,0,0,.2);
+}
 
 .logo {
     display: flex;
@@ -147,12 +146,12 @@ select {
     z-index: 600;
 }
 
-    .logo img {
-        display: block;
-        width: 110px;
-        height: auto;
-        object-fit: contain;
-    }
+.logo img {
+    display: block;
+    width: 110px;
+    height: auto;
+    object-fit: contain;
+}
 
 .nav-links {
     display: flex;
@@ -160,16 +159,16 @@ select {
     gap: 28px;
 }
 
-    .nav-links a {
-        text-decoration: none;
-        color: rgba(255,255,255,.72);
-        font-size: 13px;
-        transition: .25s;
-    }
+.nav-links a {
+    text-decoration: none;
+    color: rgba(255,255,255,.72);
+    font-size: 13px;
+    transition: .25s;
+}
 
-        .nav-links a:hover {
-            color: #fff;
-        }
+.nav-links a:hover {
+    color: #fff;
+}
 
 
 /* =========================================
@@ -186,12 +185,12 @@ select {
     z-index: 600;
 }
 
-    .menu-toggle span {
-        width: 27px;
-        height: 2px;
-        background: #fff;
-        transition: .3s;
-    }
+.menu-toggle span {
+    width: 27px;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
 
 
 /* =========================================
@@ -200,7 +199,7 @@ select {
 
 .hero {
     min-height: 100vh;
-    min-height: 100svh; /* iOS/Android adres çubuğu açılıp kapanınca zıplamayı önler */
+    min-height: 100svh;
     height: 850px;
     position: relative;
     display: flex;
@@ -208,7 +207,7 @@ select {
     padding: 120px 8% 80px;
     background: url("images/dukananasayfa.jpeg") center / cover no-repeat;
     background-color: #080e17;
-    overflow: hidden; /* <--- BURAYA EKLENDİ (Arka plan taşmasını keser) */
+    overflow: hidden;
 }
 
 .hero-overlay {
@@ -216,13 +215,6 @@ select {
     inset: 0;
     background: linear-gradient( 90deg, rgba(0,0,0,.94), rgba(0,0,0,.76) 38%, rgba(0,0,0,.25) 75%, rgba(0,0,0,.15) );
 }
-
-/*
-   Bu iki katman SADECE mobilde devreye girer
-   (aşağıdaki @media içinde açılır).
-   Masaüstünde .hero'nun kendi background-cover'ı
-   zaten fotoğrafı doğru gösteriyor.
-*/
 
 .hero-bg-blur,
 .hero-photo {
@@ -247,14 +239,14 @@ select {
     gap: 10px;
 }
 
-    .eyebrow::before,
-    .section-small::before {
-        content: "";
-        display: inline-block;
-        width: 24px;
-        height: 1px;
-        background: var(--gold);
-    }
+.eyebrow::before,
+.section-small::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background: var(--gold);
+}
 
 .hero h1 {
     font-family: "Playfair Display", Georgia, serif;
@@ -266,9 +258,9 @@ select {
     text-shadow: 0 4px 24px rgba(0,0,0,.45);
 }
 
-    .hero h1 span {
-        color: #c64a42;
-    }
+.hero h1 span {
+    color: #c64a42;
+}
 
 .hero-text {
     max-width: 510px;
@@ -304,22 +296,22 @@ select {
     box-shadow: 0 10px 30px rgba(156,48,43,.28);
 }
 
-    .primary-btn:hover {
-        background: #111827;
-        transform: translateY(-3px);
-        box-shadow: 0 16px 34px rgba(0,0,0,.35);
-    }
+.primary-btn:hover {
+    background: #111827;
+    transform: translateY(-3px);
+    box-shadow: 0 16px 34px rgba(0,0,0,.35);
+}
 
 .secondary-btn {
     border: 1px solid rgba(255,255,255,.35);
 }
 
-    .secondary-btn:hover {
-        border-color: var(--gold);
-        color: var(--gold);
-        transform: translateY(-3px);
-        background: rgba(181,154,103,.08);
-    }
+.secondary-btn:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    transform: translateY(-3px);
+    background: rgba(181,154,103,.08);
+}
 
 .hero-bottom {
     position: absolute;
@@ -351,9 +343,9 @@ select {
     font-size: 12px;
 }
 
-    .hero-number span:first-child {
-        color: #fff;
-    }
+.hero-number span:first-child {
+    color: #fff;
+}
 
 
 /* =========================================
@@ -370,17 +362,17 @@ select {
     padding: 140px 8%;
 }
 
-    .section::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 60px;
-        height: 1px;
-        background: linear-gradient( 90deg, transparent, var(--gold), transparent );
-        opacity: .55;
-    }
+.section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 1px;
+    background: linear-gradient( 90deg, transparent, var(--gold), transparent );
+    opacity: .55;
+}
 
 .section-heading {
     display: flex;
@@ -390,23 +382,23 @@ select {
     margin-bottom: 75px;
 }
 
-    .section-heading h2,
-    .about h2,
-    .location h2,
-    .reviews h2 {
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: clamp(48px,6vw,88px);
-        font-weight: 500;
-        line-height: 1.02;
-        letter-spacing: -3px;
-    }
+.section-heading h2,
+.about h2,
+.location h2,
+.reviews h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(48px,6vw,88px);
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -3px;
+}
 
-    .section-heading > p {
-        max-width: 340px;
-        color: var(--muted);
-        line-height: 1.8;
-        font-size: 15px;
-    }
+.section-heading > p {
+    max-width: 340px;
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 15px;
+}
 
 
 /* =========================================
@@ -446,21 +438,21 @@ select {
     gap: 70px;
 }
 
-    .about-stats div {
-        display: flex;
-        flex-direction: column;
-        gap: 9px;
-    }
+.about-stats div {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
 
-    .about-stats strong {
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: 29px;
-    }
+.about-stats strong {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 29px;
+}
 
-    .about-stats span {
-        color: var(--muted);
-        font-size: 12px;
-    }
+.about-stats span {
+    color: var(--muted);
+    font-size: 12px;
+}
 
 
 /* =========================================
@@ -488,27 +480,27 @@ select {
     transition: padding .35s, background .35s;
 }
 
-    .service-item::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 12%;
-        bottom: 12%;
-        width: 2px;
-        background: var(--gold);
-        transform: scaleY(0);
-        transform-origin: center;
-        transition: transform .35s ease;
-    }
+.service-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12%;
+    bottom: 12%;
+    width: 2px;
+    background: var(--gold);
+    transform: scaleY(0);
+    transform-origin: center;
+    transition: transform .35s ease;
+}
 
-    .service-item:hover {
-        padding-left: 34px;
-        background: rgba(0,0,0,.03);
-    }
+.service-item:hover {
+    padding-left: 34px;
+    background: rgba(0,0,0,.03);
+}
 
-        .service-item:hover::before {
-            transform: scaleY(1);
-        }
+.service-item:hover::before {
+    transform: scaleY(1);
+}
 
 .service-index {
     color: var(--accent);
@@ -554,20 +546,20 @@ select {
     background: rgba(184,59,53,.06);
 }
 
-    .cash-notice strong {
-        display: block;
-        color: var(--accent);
-        font-size: 11px;
-        letter-spacing: 2px;
-        margin-bottom: 14px;
-    }
+.cash-notice strong {
+    display: block;
+    color: var(--accent);
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
 
-    .cash-notice p {
-        color: #555;
-        font-size: 13px;
-        line-height: 1.7;
-        margin: 4px 0;
-    }
+.cash-notice p {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 4px 0;
+}
 
 
 /* =========================================
@@ -597,27 +589,27 @@ select {
     transition: border-color .4s, box-shadow .4s;
 }
 
-    .gallery-item:hover {
-        border-color: rgba(181,154,103,.6);
-        box-shadow: 0 25px 70px rgba(0,0,0,.4), 0 0 0 1px rgba(181,154,103,.25);
-    }
+.gallery-item:hover {
+    border-color: rgba(181,154,103,.6);
+    box-shadow: 0 25px 70px rgba(0,0,0,.4), 0 0 0 1px rgba(181,154,103,.25);
+}
 
-    .gallery-item img {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        max-width: none;
-        display: block;
-        object-fit: cover;
-        object-position: center;
-        image-rendering: auto;
-        transition: transform .8s cubic-bezier(.22,1,.36,1);
-    }
+.gallery-item img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    image-rendering: auto;
+    transition: transform .8s cubic-bezier(.22,1,.36,1);
+}
 
-    .gallery-item:hover img {
-        transform: scale(1.06);
-    }
+.gallery-item:hover img {
+    transform: scale(1.06);
+}
 
 .gallery-overlay {
     position: absolute;
@@ -655,10 +647,10 @@ select {
     transition: .25s;
 }
 
-    .gallery-all-btn:hover {
-        background: #fff;
-        color: #111;
-    }
+.gallery-all-btn:hover {
+    background: #fff;
+    color: #111;
+}
 
 
 /* =========================================
@@ -679,14 +671,14 @@ select {
     box-shadow: 0 25px 70px rgba(0,0,0,.18);
 }
 
-    .video-showcase video {
-        display: block;
-        width: 100%;
-        height: auto;
-        max-height: 720px;
-        margin: auto;
-        object-fit: contain;
-    }
+.video-showcase video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 720px;
+    margin: auto;
+    object-fit: contain;
+}
 
 
 /* =========================================
@@ -709,14 +701,9 @@ select {
     overflow: visible;
 }
 
-    .review-card::before {
-        display: none;
-    }
-
-
-/* =========================
-   PUAN
-========================= */
+.review-card::before {
+    display: none;
+}
 
 .review-rating {
     display: flex;
@@ -725,23 +712,18 @@ select {
     margin-bottom: 45px;
 }
 
-    .review-rating strong {
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: 52px;
-        font-weight: 600;
-        color: #f1eadf;
-    }
+.review-rating strong {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 52px;
+    font-weight: 600;
+    color: #f1eadf;
+}
 
-    .review-rating span {
-        color: var(--muted);
-        font-size: 13px;
-        letter-spacing: .04em;
-    }
-
-
-/* =========================
-   YORUM KARTLARI
-========================= */
+.review-rating span {
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: .04em;
+}
 
 .review-list {
     display: grid;
@@ -763,63 +745,48 @@ select {
     transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
 }
 
+.review-item::before {
+    content: "\201C";
+    position: absolute;
+    top: -35px;
+    right: 18px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 150px;
+    line-height: 1;
+    color: rgba(181,154,103,.07);
+    pointer-events: none;
+}
 
-    /* Büyük tırnak */
+.review-item:hover {
+    transform: translateY(-6px);
+    border-color: rgba(181,154,103,.38);
+    box-shadow: 0 25px 60px rgba(0,0,0,.25);
+}
 
-    .review-item::before {
-        content: "\201C";
-        position: absolute;
-        top: -35px;
-        right: 18px;
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: 150px;
-        line-height: 1;
-        color: rgba(181,154,103,.07);
-        pointer-events: none;
-    }
+.review-item p {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    color: #e8e3da;
+    font-size: 16px;
+    line-height: 1.75;
+}
 
-
-    /* Hover */
-
-    .review-item:hover {
-        transform: translateY(-6px);
-        border-color: rgba(181,154,103,.38);
-        box-shadow: 0 25px 60px rgba(0,0,0,.25);
-    }
-
-
-    /* Yorum */
-
-    .review-item p {
-        position: relative;
-        z-index: 1;
-        margin: 0;
-        color: #e8e3da;
-        font-size: 16px;
-        line-height: 1.75;
-    }
-
-
-    /* İsim */
-
-    .review-item span {
-        position: relative;
-        z-index: 1;
-        display: block;
-        margin-top: 30px;
-        color: var(--muted);
-        font-size: 12px;
-        letter-spacing: .04em;
-    }
-
-
-/* =========================
-   GOOGLE BUTONU
-========================= */
+.review-item span {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-top: 30px;
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: .04em;
+}
 
 .review-card > .primary-btn {
     display: inline-flex;
 }
+
+
 /* =========================================
    KONUM
 ========================================= */
@@ -832,9 +799,9 @@ select {
     color: #fff;
 }
 
-    .location .section-small {
-        color: #1a1a1a;
-    }
+.location .section-small {
+    color: #1a1a1a;
+}
 
 .location-info {
     display: flex;
@@ -849,19 +816,19 @@ select {
     gap: 10px;
 }
 
-    .contact-block span {
-        color: rgba(0,0,0,.65);
-        font-size: 10px;
-        font-weight: 700;
-        letter-spacing: 2px;
-    }
+.contact-block span {
+    color: rgba(0,0,0,.65);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
 
-    .contact-block p,
-    .contact-block a {
-        font-size: 18px;
-        line-height: 1.7;
-        text-decoration: none;
-    }
+.contact-block p,
+.contact-block a {
+    font-size: 18px;
+    line-height: 1.7;
+    text-decoration: none;
+}
 
 .map-btn {
     display: inline-flex;
@@ -874,10 +841,10 @@ select {
     transition: .3s;
 }
 
-    .map-btn:hover {
-        background: #f4f0e8;
-        color: #111;
-    }
+.map-btn:hover {
+    background: #f4f0e8;
+    color: #111;
+}
 
 
 /* =========================================
@@ -914,15 +881,15 @@ footer {
     flex-wrap: wrap;
 }
 
-    .footer-links a {
-        color: #aaa;
-        text-decoration: none;
-        font-size: 13px;
-    }
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 13px;
+}
 
-        .footer-links a:hover {
-            color: #fff;
-        }
+.footer-links a:hover {
+    color: #fff;
+}
 
 .footer-bottom {
     border-top: 1px solid #222;
@@ -935,13 +902,13 @@ footer {
 
 
 /* =========================================
-   WHATSAPP
+   WHATSAPP & YUKARI ÇIK
 ========================================= */
 
 .whatsapp-float {
     position: fixed;
-    right: 25px;
-    bottom: 25px;
+    right: 20px;
+    bottom: 20px;
     z-index: 400;
     display: flex;
     align-items: center;
@@ -955,9 +922,9 @@ footer {
     transition: .3s;
 }
 
-    .whatsapp-float:hover {
-        transform: translateY(-4px);
-    }
+.whatsapp-float:hover {
+    transform: translateY(-4px);
+}
 
 .whatsapp-icon {
     font-size: 22px;
@@ -968,10 +935,36 @@ footer {
     font-weight: 700;
 }
 
+.scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    z-index: 350;
+    width: 45px;
+    height: 45px;
+    border: 0;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: .3s;
+}
+
+.scroll-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top:hover {
+    background: var(--accent);
+}
+
 
 /* =========================================
-   FOTOĞRAF BÜYÜTME
-   EN ÜST KATMAN
+   MODALLAR
 ========================================= */
 
 .image-modal {
@@ -984,59 +977,47 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 20px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: opacity .35s ease, visibility .35s;
 }
 
-    .image-modal.active {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-    }
+.image-modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
 
-    .image-modal img {
-        display: block;
-        width: auto;
-        height: auto;
-        max-width: 94vw;
-        max-height: 90vh;
-        object-fit: contain;
-        image-rendering: auto;
-        box-shadow: 0 20px 80px rgba(0,0,0,.7);
-        transform: scale(.94);
-        transition: transform .4s cubic-bezier(.22,1,.36,1);
-    }
-
-    .image-modal.active img {
-        transform: scale(1);
-    }
+.image-modal #modalImage {
+    display: block;
+    width: auto !important;
+    height: auto !important;
+    max-width: 92vw !important;
+    max-height: 85vh !important;
+    object-fit: contain !important;
+    box-shadow: 0 20px 80px rgba(0,0,0,.7);
+}
 
 .modal-close {
     position: fixed;
     top: 20px;
-    right: 25px;
-    width: 48px;
-    height: 48px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
     border: 1px solid rgba(255,255,255,.25);
     border-radius: 50%;
     background: rgba(0,0,0,.5);
     color: #fff;
-    font-size: 34px;
+    font-size: 30px;
     cursor: pointer;
     z-index: 100001;
 }
 
-    .modal-close:hover {
-        background: var(--accent);
-    }
-
-
-/* =========================================
-   TÜM ÇALIŞMALAR MODAL
-========================================= */
+.modal-close:hover {
+    background: var(--accent);
+}
 
 .gallery-modal {
     position: fixed;
@@ -1056,21 +1037,15 @@ footer {
     transition: opacity .35s ease, visibility .35s;
 }
 
-    .gallery-modal.active {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-    }
+.gallery-modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
 
 .gallery-modal-inner {
     width: min(1200px,100%);
     position: relative;
-    transform: translateY(16px);
-    transition: transform .4s cubic-bezier(.22,1,.36,1);
-}
-
-.gallery-modal.active .gallery-modal-inner {
-    transform: translateY(0);
 }
 
 .gallery-modal-inner h2 {
@@ -1094,70 +1069,37 @@ footer {
     background: #181818;
 }
 
-    .all-gallery-item img {
-        width: 100%;
-        height: 100%;
-        display: block;
-        object-fit: cover;
-        object-position: center;
-        image-rendering: auto;
-        transition: .5s;
-    }
+.all-gallery-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: .5s;
+}
 
-    .all-gallery-item:hover img {
-        transform: scale(1.05);
-    }
+.all-gallery-item:hover img {
+    transform: scale(1.05);
+}
 
 .gallery-modal-close {
     position: fixed;
     top: 20px;
-    right: 25px;
-    width: 48px;
-    height: 48px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
     border: 1px solid rgba(255,255,255,.25);
     border-radius: 50%;
     background: rgba(0,0,0,.5);
     color: #fff;
-    font-size: 34px;
+    font-size: 30px;
     cursor: pointer;
     z-index: 9001;
 }
 
-    .gallery-modal-close:hover {
-        background: var(--accent);
-    }
-
-
-/* =========================================
-   YUKARI
-========================================= */
-
-.scroll-top {
-    position: fixed;
-    right: 25px;
-    bottom: 90px;
-    z-index: 350;
-    width: 45px;
-    height: 45px;
-    border: 0;
-    background: #222;
-    color: #fff;
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: .3s;
+.gallery-modal-close:hover {
+    background: var(--accent);
 }
-
-    .scroll-top.show {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-
-    .scroll-top:hover {
-        background: var(--accent);
-    }
 
 
 /* =========================================
@@ -1170,14 +1112,14 @@ footer {
     transition: opacity .7s, transform .7s;
 }
 
-    .reveal.active {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 /* =========================================
-   TABLET
+   TABLET & MOBİL DÜZENLEMELERİ (MAX-WIDTH: 900PX)
 ========================================= */
 
 @media (max-width: 900px) {
@@ -1209,14 +1151,14 @@ footer {
         transition: right .4s;
     }
 
-        .nav-links.active {
-            right: 0;
-        }
+    .nav-links.active {
+        right: 0;
+    }
 
-        .nav-links a {
-            font-size: 20px;
-            color: #fff;
-        }
+    .nav-links a {
+        font-size: 20px;
+        color: #fff;
+    }
 
     .menu-toggle.active span:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
@@ -1234,12 +1176,14 @@ footer {
         padding: 100px 6%;
     }
 
+    /* MOBİL HERO - 3 KİŞİNİN TAMAMI (CONTAIN) + BLUR ARKA PLAN */
     .hero {
         height: 800px;
         padding: 110px 6% 90px;
         align-items: flex-end;
         background: none;
         background-color: #05080d;
+        overflow: hidden;
     }
 
     .hero-bg-blur {
@@ -1247,7 +1191,7 @@ footer {
         position: absolute;
         inset: -30px;
         background: url("images/dukananasayfa.jpeg") center / cover no-repeat;
-        filter: blur(30px) brightness(.5) saturate(1.15);
+        filter: blur(30px) brightness(.4) saturate(1.15);
         transform: scale(1.12);
     }
 
@@ -1255,11 +1199,11 @@ footer {
         display: block;
         position: absolute;
         inset: 0;
-        background: url("images/dukananasayfa.jpeg") center top / contain no-repeat;
+        background: url("images/dukananasayfa.jpeg") center center / contain no-repeat;
     }
 
     .hero-overlay {
-        background: linear-gradient( to top, rgba(5,8,13,.96) 0%, rgba(5,8,13,.86) 22%, rgba(5,8,13,.4) 48%, rgba(5,8,13,.05) 68%, rgba(5,8,13,0) 80% );
+        background: linear-gradient( to top, rgba(5,8,13,.92) 0%, rgba(5,8,13,.5) 40%, rgba(5,8,13,.1) 100% );
     }
 
     .hero-content {
@@ -1291,17 +1235,8 @@ footer {
     .service-item {
         grid-template-columns: 40px minmax(0,1fr) 80px;
         gap: 15px;
-        margin-left: 0 !important; /* <--- BURAYA EKLENDİ (Mobilde sola taşmayı keser) */
+        margin-left: 0 !important;
     }
-
-
-
-
-
-
-    /* =========================================================
-   GALERİ - 4'LÜ ÖNİZLEME
-   ========================================================= */
 
     .gallery-grid {
         display: grid;
@@ -1311,37 +1246,32 @@ footer {
         width: 100%;
     }
 
-        .gallery-grid .gallery-item {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 4 / 3;
-            overflow: hidden;
-            background: #111;
-            border: 1px solid rgba(181,154,103,.18);
-            cursor: zoom-in;
-        }
+    .gallery-grid .gallery-item {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+        background: #111;
+        border: 1px solid rgba(181,154,103,.18);
+        cursor: zoom-in;
+    }
 
-            .gallery-grid .gallery-item img {
-                position: absolute;
-                inset: 0;
-                width: 100%;
-                height: 100%;
-                max-width: none;
-                object-fit: cover;
-                object-position: center;
-                display: block;
-                image-rendering: auto;
-                transition: transform .5s ease;
-            }
+    .gallery-grid .gallery-item img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        image-rendering: auto;
+        transition: transform .5s ease;
+    }
 
-            .gallery-grid .gallery-item:hover img {
-                transform: scale(1.035);
-            }
-
-
-    /* =========================================================
-   TÜM GALERİ
-   ========================================================= */
+    .gallery-grid .gallery-item:hover img {
+        transform: scale(1.035);
+    }
 
     .gallery-modal {
         position: fixed;
@@ -1361,11 +1291,11 @@ footer {
         transition: opacity .25s ease, visibility .25s ease;
     }
 
-        .gallery-modal.active {
-            opacity: 1;
-            visibility: visible;
-            pointer-events: auto;
-        }
+    .gallery-modal.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
 
     .gallery-modal-inner {
         position: relative;
@@ -1390,33 +1320,26 @@ footer {
         cursor: zoom-in;
     }
 
-        .all-gallery-item img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            max-width: none;
-            object-fit: cover;
-            object-position: center;
-            image-rendering: auto;
-            transition: transform .45s ease;
-        }
+    .all-gallery-item img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        object-fit: cover;
+        object-position: center;
+        image-rendering: auto;
+        transition: transform .45s ease;
+    }
 
-        .all-gallery-item:hover img {
-            transform: scale(1.035);
-        }
-
-
-    /* =========================================================
-   BÜYÜK FOTOĞRAF
-   HER ŞEYİN ÜZERİNDE
-   ========================================================= */
+    .all-gallery-item:hover img {
+        transform: scale(1.035);
+    }
 
     .image-modal {
         position: fixed;
         inset: 0;
         width: 100vw;
         height: 100vh;
-        /* GALERİDEN DAHA YÜKSEK */
         z-index: 100000;
         display: flex;
         align-items: center;
@@ -1429,31 +1352,25 @@ footer {
         transition: opacity .25s ease, visibility .25s ease;
     }
 
-        .image-modal.active {
-            opacity: 1;
-            visibility: visible;
-            pointer-events: auto;
-        }
+    .image-modal.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
 
-
-        /* Gerçek fotoğraf */
-
-        .image-modal img {
-            display: block;
-            width: min(94vw, 1200px) !important;
-            height: auto !important;
-            max-width: 94vw !important;
-            max-height: 90vh !important;
-            object-fit: contain !important;
-            object-position: center;
-            transform: none !important;
-            filter: none !important;
-            image-rendering: auto;
-            box-shadow: 0 25px 100px rgba(0,0,0,.7);
-        }
-
-
-    /* Kapatma */
+    .image-modal img {
+        display: block;
+        width: min(94vw, 1200px) !important;
+        height: auto !important;
+        max-width: 94vw !important;
+        max-height: 90vh !important;
+        object-fit: contain !important;
+        object-position: center;
+        transform: none !important;
+        filter: none !important;
+        image-rendering: auto;
+        box-shadow: 0 25px 100px rgba(0,0,0,.7);
+    }
 
     .modal-close {
         position: fixed;
@@ -1473,68 +1390,15 @@ footer {
         justify-content: center;
     }
 
-        .modal-close:hover {
-            background: var(--accent);
-        }
-
-
-    /* =========================================================
-   MOBİL
-   ========================================================= */
-
-    @media (max-width: 900px) {
-
-        .gallery-grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            grid-template-rows: repeat(2, minmax(0, 1fr));
-            gap: 8px;
-        }
-
-        .all-gallery-grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 8px;
-        }
-
-        .gallery-modal {
-            padding: 65px 15px 30px;
-        }
-
-        .image-modal {
-            padding: 15px;
-        }
-
-            .image-modal img {
-                max-width: 96vw !important;
-                max-height: 88vh !important;
-            }
-    }
-
-
-    @media (max-width: 600px) {
-
-        .gallery-grid {
-            gap: 6px;
-        }
-
-        .all-gallery-grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 6px;
-        }
-
-        .image-modal img {
-            max-width: 96vw !important;
-            max-height: 84vh !important;
-        }
+    .modal-close:hover {
+        background: var(--accent);
     }
 }
-/* SADECE GALERİDE AÇILAN FOTOĞRAF */
-.image-modal #modalImage {
-    width: 75vw !important;
-    height: 80vh !important;
-    max-width: 90vw !important;
-    max-height: 85vh !important;
-    object-fit: contain !important;
-}
+
+
+/* =========================================
+   EK KÜÇÜK EKRAN DÜZENLEMELERİ
+========================================= */
 
 @media (max-width: 800px) {
     .review-list {
@@ -1548,20 +1412,16 @@ footer {
         margin-bottom: 30px;
     }
 
-        .review-rating strong {
-            font-size: 42px;
-        }
+    .review-rating strong {
+        font-size: 42px;
+    }
 
     .review-item {
         min-height: 220px;
     }
 }
-/* =========================
-   YORUMLAR - MOBİL
-========================= */
 
 @media (max-width: 700px) {
-
     .review-list {
         grid-template-columns: 1fr;
         gap: 16px;
@@ -1572,26 +1432,42 @@ footer {
         padding: 30px 26px 26px;
     }
 
-        .review-item p {
-            font-size: 15px;
-            line-height: 1.7;
-        }
+    .review-item p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
 
-        .review-item span {
-            margin-top: 24px;
-        }
+    .review-item span {
+        margin-top: 24px;
+    }
 
     .review-rating {
         margin-bottom: 30px;
         gap: 12px;
     }
 
-        .review-rating strong {
-            font-size: 44px;
-        }
+    .review-rating strong {
+        font-size: 44px;
+    }
 
     .review-card > .primary-btn {
         width: 100%;
         justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-grid {
+        gap: 6px;
+    }
+
+    .all-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px;
+    }
+
+    .image-modal img {
+        max-width: 96vw !important;
+        max-height: 84vh !important;
     }
 }
